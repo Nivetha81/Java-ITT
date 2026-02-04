@@ -1,26 +1,26 @@
 import java.util.*;
 import java.io.*;
-class BiCycle{
-	String define_me(){
-		return "a vehicle with pedals.";
-	}
+class Disney{
+        String define_me(){
+                return "is Nobita.";
+        }
 }
-class MotorCycle extends BiCycle{
-	String define_me(){
-		return "a cycle with an engine.";
-	}
-	
-	MotorCycle(){
-		System.out.println("Hello I am a motorcycle, I am "+ define_me());
+class Cartoon extends Disney{
+        String define_me(){
+                return "have a lot of friends.";
+        }
 
-		String temp=super.define_me();
+        Cartoon(){
+                System.out.println("Hello I am Doraemon, I am "+ define_me());
 
-		System.out.println("My ancestor is a cycle who is "+ temp );
-	}
-	
+                String temp=super.define_me();
+
+                System.out.println("One of My Best Friend "+ temp );
+        }
+
 }
-class Solution{
-	public static void main(String []args){
-		MotorCycle M=new MotorCycle();
-	}
+class Solution1{
+        public static void main(String []args){
+                Cartoon C=new Cartoon();
+        }
 }
